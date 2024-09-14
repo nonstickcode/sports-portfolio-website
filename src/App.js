@@ -1,0 +1,167 @@
+import React from 'react';
+
+function App() {
+  return (
+    <div className="text-gray-900">
+      {/* Header Section */}
+      <header className="bg-black text-white py-8 fixed top-0 left-0 w-full z-50">
+        <div className="container mx-auto my-4 text-center">
+          <h1 className="text-4xl font-bold">LAKODA "STINKY" GARRISON</h1>
+          
+          {/* Navigation Links */}
+          <nav className="mt-12">
+            <ul className="flex justify-center space-x-6 text-lg">
+              <li>
+                <a href="#home" className="hover:underline">Home</a>
+              </li>
+              <li>
+                <a href="#key-facts" className="hover:underline">Key Facts</a>
+              </li>
+              <li>
+                <a href="#athletics" className="hover:underline">Athletics</a>
+              </li>
+              <li>
+                <a href="#highlights" className="hover:underline">Highlights</a>
+              </li>
+              <li>
+                <a href="#other-videos" className="hover:underline">Other Videos</a>
+              </li>
+              <li>
+                <a href="#photos" className="hover:underline">Photos</a>
+              </li>
+              <li>
+                <a href="#academics" className="hover:underline">Academics</a>
+              </li>
+              <li>
+                <a href="#leadership" className="hover:underline">Leadership</a>
+              </li>
+              <li>
+                <a href="#community" className="hover:underline">Community</a>
+              </li>
+              <li>
+                <a href="#inspiration" className="hover:underline">Inspiration</a>
+              </li>
+              <li>
+                <a href="#contact" className="hover:underline">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      {/* Adding margin-top equivalent to the header height */}
+      <main className="mt-40">
+        {/* Highlight Video Section */}
+        <section className="py-16 bg-gray-100">
+          <div className="container mx-auto text-center">
+            <h2 className="text-3xl font-bold">Highlight Video</h2>
+            <div className="mt-8">
+              <iframe
+                className="mx-auto"
+                width="80%"
+                height="450"
+                src="https://www.youtube.com/embed/placeholder"
+                title="Highlight Video"
+                allowFullScreen
+              ></iframe>
+            </div>
+          </div>
+        </section>
+
+        {/* About Me Section */}
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-4 text-center">
+            <h2 className="text-3xl font-bold">About Me</h2>
+            <p className="mt-6 text-lg max-w-3xl mx-auto">
+              I am a passionate and dedicated student-athlete with a strong commitment to both academics and sports.
+              My goal is to compete at the collegiate level while pursuing a degree in [intended major]. I have been
+              a member of the [team name] for [number of years] and have consistently been recognized for my leadership
+              and performance on the field.
+            </p>
+          </div>
+        </section>
+
+        {/* Stats and Achievements Section */}
+        <section className="py-16 bg-gray-100">
+          <div className="container mx-auto px-4 text-center">
+            <h2 className="text-3xl font-bold">Stats & Achievements</h2>
+            <div className="flex flex-wrap justify-center mt-8">
+              <div className="w-full sm:w-1/2 lg:w-1/3 p-4">
+                <div className="bg-white p-6 rounded-lg shadow-lg">
+                  <h3 className="text-xl font-semibold">Goals Scored</h3>
+                  <p className="mt-4 text-3xl font-bold">28</p>
+                </div>
+              </div>
+              <div className="w-full sm:w-1/2 lg:w-1/3 p-4">
+                <div className="bg-white p-6 rounded-lg shadow-lg">
+                  <h3 className="text-xl font-semibold">Assists</h3>
+                  <p className="mt-4 text-3xl font-bold">15</p>
+                </div>
+              </div>
+              <div className="w-full sm:w-1/2 lg:w-1/3 p-4">
+                <div className="bg-white p-6 rounded-lg shadow-lg">
+                  <h3 className="text-xl font-semibold">Games Played</h3>
+                  <p className="mt-4 text-3xl font-bold">50</p>
+                </div>
+              </div>
+            </div>
+            <div className="mt-8">
+              <h3 className="text-xl font-bold">Achievements</h3>
+              <ul className="list-disc mt-4 mx-auto text-lg max-w-2xl">
+                <li>All-State Soccer Team 2023</li>
+                <li>Captain of High School Team</li>
+                <li>Player of the Year - Region 4</li>
+                <li>Scholar Athlete Award</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        {/* Photos Section */}
+        <section className="py-16 bg-white">
+          <div className="container mx-auto text-center">
+            <h2 className="text-3xl font-bold">Photo Gallery</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-8">
+              {/* Placeholder images */}
+              <img
+                src="https://via.placeholder.com/300x200"
+                alt="Placeholder Image 1"
+                className="w-full h-auto rounded-lg shadow-lg"
+              />
+              <img
+                src="https://via.placeholder.com/300x200"
+                alt="Placeholder Image 2"
+                className="w-full h-auto rounded-lg shadow-lg"
+              />
+              <img
+                src="https://via.placeholder.com/300x200"
+                alt="Placeholder Image 3"
+                className="w-full h-auto rounded-lg shadow-lg"
+              />
+            </div>
+          </div>
+        </section>
+
+        {/* Contact Section */}
+        <section className="py-16 bg-gray-800 text-white">
+          <div className="container mx-auto text-center">
+            <h2 className="text-3xl font-bold">Contact Me</h2>
+            <p className="mt-6 text-lg max-w-3xl mx-auto">
+              For inquiries, recruitment information, or more details about my athletic journey, feel free to reach out!
+            </p>
+            <div className="mt-8">
+              <a
+                href="mailto:john.doe@example.com"
+                className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg text-lg hover:bg-blue-500 transition"
+              >
+                Email Me
+              </a>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  );
+}
+
+export default App;
