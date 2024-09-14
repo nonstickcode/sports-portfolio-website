@@ -5,11 +5,11 @@ function App() {
     <div className="text-gray-900">
       {/* Header Section */}
       <header className="bg-black text-white py-8 fixed top-0 left-0 w-full z-50">
-        <div className="container mx-auto my-4 text-center">
-          <h1 className="text-4xl font-bold">LAKODA "STINKY" GARRISON</h1>
+        <div className="container mx-auto my-2 text-center">
+          <h1 className="text-4xl font-normal" >LAKODA "STINKY" GARRISON</h1>
           
           {/* Navigation Links */}
-          <nav className="mt-12">
+          <nav className="mt-10 font-thin">
             <ul className="flex justify-center space-x-6 text-lg">
               <li>
                 <a href="#home" className="hover:underline">Home</a>
@@ -143,7 +143,7 @@ function App() {
         </section>
 
         {/* Contact Section */}
-        <section className="py-16 bg-gray-800 text-white">
+        <section id="contact" className="py-16 bg-gray-800 text-white">
           <div className="container mx-auto text-center">
             <h2 className="text-3xl font-bold">Contact Me</h2>
             <p className="mt-6 text-lg max-w-3xl mx-auto">
