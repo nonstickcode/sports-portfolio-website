@@ -125,17 +125,17 @@ function App() {
               {/* Placeholder images */}
               <img
                 src="https://via.placeholder.com/300x200"
-                alt="Placeholder Image 1"
+                alt="Placeholder 1"
                 className="w-full h-auto rounded-lg shadow-lg"
               />
               <img
                 src="https://via.placeholder.com/300x200"
-                alt="Placeholder Image 2"
+                alt="Placeholder 2"
                 className="w-full h-auto rounded-lg shadow-lg"
               />
               <img
                 src="https://via.placeholder.com/300x200"
-                alt="Placeholder Image 3"
+                alt="Placeholder 3"
                 className="w-full h-auto rounded-lg shadow-lg"
               />
             </div>
