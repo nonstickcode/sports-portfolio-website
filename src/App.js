@@ -1,52 +1,83 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 function App() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <div className="text-gray-900">
       {/* Header Section */}
       <header className="bg-black text-white py-8 fixed top-0 left-0 w-full z-50">
-        <div className="container mx-auto my-2 text-center">
-          <h1 className="text-4xl font-normal" >LAKODA "STINKY" GARRISON</h1>
-          
-          {/* Navigation Links */}
-          <nav className="mt-10 font-thin">
-            <ul className="flex justify-center space-x-6 text-lg">
-              <li>
-                <a href="#home" className="hover:underline">Home</a>
-              </li>
-              <li>
-                <a href="#key-facts" className="hover:underline">Key Facts</a>
-              </li>
-              <li>
-                <a href="#athletics" className="hover:underline">Athletics</a>
-              </li>
-              <li>
-                <a href="#highlights" className="hover:underline">Highlights</a>
-              </li>
-              <li>
-                <a href="#other-videos" className="hover:underline">Other Videos</a>
-              </li>
-              <li>
-                <a href="#photos" className="hover:underline">Photos</a>
-              </li>
-              <li>
-                <a href="#academics" className="hover:underline">Academics</a>
-              </li>
-              <li>
-                <a href="#leadership" className="hover:underline">Leadership</a>
-              </li>
-              <li>
-                <a href="#community" className="hover:underline">Community</a>
-              </li>
-              <li>
-                <a href="#inspiration" className="hover:underline">Inspiration</a>
-              </li>
-              <li>
-                <a href="#contact" className="hover:underline">Contact</a>
-              </li>
-            </ul>
+        <div className="container mx-auto relative">
+          {/* Header Title */}
+          <div className="text-center w-full">
+            <h1 className="text-xl lg:text-4xl font-normal leading-tight lg:leading-loose">
+              <span className="block lg:inline lg:mr-2">LAKODA</span>
+              <span className="block lg:inline lg:mr-2">"STINKY"</span>
+              <span className="block lg:inline lg:mr-2">GARRISON</span>
+            </h1>
+          </div>
+
+          {/* Hamburger Menu for Mobile */}
+          <div className="absolute right-0 top-0 bottom-0 flex items-center justify-end md:hidden pr-4">
+            <button
+              onClick={toggleMenu}
+              className="focus:outline-none"
+              aria-label="Toggle navigation"
+            >
+              <svg
+                className="w-10 h-10 text-white"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                {/* Update the d attribute to make all three lines full-length */}
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            </button>
+          </div>
+
+          {/* Full Navigation Links for Desktop */}
+          <nav className="hidden md:flex justify-center mt-6 space-x-6 text-lg font-thin">
+            <a href="#home" className="hover:underline">Home</a>
+            <a href="#key-facts" className="hover:underline">Key Facts</a>
+            <a href="#athletics" className="hover:underline">Athletics</a>
+            <a href="#highlights" className="hover:underline">Highlights</a>
+            <a href="#other-videos" className="hover:underline">Other Videos</a>
+            <a href="#photos" className="hover:underline">Photos</a>
+            <a href="#academics" className="hover:underline">Academics</a>
+            <a href="#leadership" className="hover:underline">Leadership</a>
+            <a href="#community" className="hover:underline">Community</a>
+            <a href="#inspiration" className="hover:underline">Inspiration</a>
+            <a href="#contact" className="hover:underline">Contact</a>
           </nav>
         </div>
+
+        {/* Mobile Menu */}
+        {isMenuOpen && (
+          <nav className="md:hidden flex flex-col items-center bg-black text-white py-4 space-y-4">
+            <a href="#home" className="hover:underline">Home</a>
+            <a href="#key-facts" className="hover:underline">Key Facts</a>
+            <a href="#athletics" className="hover:underline">Athletics</a>
+            <a href="#highlights" className="hover:underline">Highlights</a>
+            <a href="#other-videos" className="hover:underline">Other Videos</a>
+            <a href="#photos" className="hover:underline">Photos</a>
+            <a href="#academics" className="hover:underline">Academics</a>
+            <a href="#leadership" className="hover:underline">Leadership</a>
+            <a href="#community" className="hover:underline">Community</a>
+            <a href="#inspiration" className="hover:underline">Inspiration</a>
+            <a href="#contact" className="hover:underline">Contact</a>
+          </nav>
+        )}
       </header>
 
       {/* Adding margin-top equivalent to the header height */}
