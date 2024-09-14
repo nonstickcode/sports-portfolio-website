@@ -30,7 +30,7 @@ function App() {
   return (
     <div className="text-gray-900">
       {/* Header Section */}
-      <header className="bg-black text-white py-8 fixed top-0 left-0 w-full z-50">
+      <header className="bg-black text-white font-roboto py-8 fixed top-0 left-0 w-full z-50">
         <div className="container mx-auto relative">
           {/* Header Title */}
           <div className="text-center w-full">
@@ -103,7 +103,7 @@ function App() {
       </header>
 
       {/* Adding margin-top equivalent to the header height */}
-      <main className="mt-40">
+      <main className="mt-40 font-sans">
         {/* Highlight Video Section */}
         <section className="py-16 bg-gray-100">
           <div className="container mx-auto text-center">
