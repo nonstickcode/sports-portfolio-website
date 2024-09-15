@@ -30,13 +30,13 @@ function App() {
   return (
     <div className="text-gray-900">
       {/* Header Section */}
-      <header className="bg-black text-white font-roboto py-8 fixed top-0 left-0 w-full z-50">
+      <header className="bg-black text-white py-8 fixed top-0 left-0 w-full z-50">
         <div className="container mx-auto relative">
           {/* Header Title */}
           <div className="text-center w-full">
-            <h1 className="text-2xl lg:text-4xl font-normal leading-tight lg:leading-loose">
+            <h1 className="text-2xl lg:text-4xl font-rufina font-normal leading-tight lg:leading-loose">
               <span className="block lg:inline lg:mr-2">LAKODA</span>
-              <span className="block lg:inline lg:mr-2">"STINKY"</span>
+              {/* <span className="block lg:inline lg:mr-2">"STINKY"</span> */}
               <span className="block lg:inline lg:mr-2">GARRISON</span>
             </h1>
           </div>
@@ -66,7 +66,7 @@ function App() {
           </div>
 
           {/* Full Navigation Links for Desktop */}
-          <nav className="hidden md:flex justify-center mt-6 space-x-6 text-lg font-thin">
+          <nav className="hidden md:flex justify-center font-oxygen mt-6 space-x-6 text-lg font-thin">
             <a href="#home" className="hover:underline">Home</a>
             <a href="#key-facts" className="hover:underline">Key Facts</a>
             <a href="#athletics" className="hover:underline">Athletics</a>
@@ -85,7 +85,7 @@ function App() {
         {isMenuOpen && (
           <nav
             ref={menuRef}
-            className="md:hidden flex flex-col items-center bg-black text-white py-4 space-y-4"
+            className="md:hidden flex flex-col items-center bg-black text-white font-oxygen py-4 space-y-4"
           >
             <a href="#home" className="hover:underline" onClick={() => setIsMenuOpen(false)}>Home</a>
             <a href="#key-facts" className="hover:underline" onClick={() => setIsMenuOpen(false)}>Key Facts</a>
@@ -103,11 +103,11 @@ function App() {
       </header>
 
       {/* Adding margin-top equivalent to the header height */}
-      <main className="mt-40 font-sans">
+      <main className="mt-40">
         {/* Highlight Video Section */}
         <section className="py-16 bg-gray-100">
           <div className="container mx-auto text-center">
-            <h2 className="text-3xl font-bold">Highlight Video</h2>
+            <h2 className="text-3xl font-bold font-rufina">Highlight Video</h2>
             <div className="mt-8">
               <iframe
                 className="mx-auto"
@@ -124,8 +124,8 @@ function App() {
         {/* About Me Section */}
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl font-bold">About Me</h2>
-            <p className="mt-6 text-lg max-w-3xl mx-auto">
+            <h2 className="text-3xl font-bold font-rufina">About Me</h2>
+            <p className="mt-6 text-lg font-oxygen max-w-3xl mx-auto">
               I am a passionate and dedicated student-athlete with a strong commitment to both academics and sports.
               My goal is to compete at the collegiate level while pursuing a degree in [intended major]. I have been
               a member of the [team name] for [number of years] and have consistently been recognized for my leadership
@@ -137,7 +137,7 @@ function App() {
         {/* Stats and Achievements Section */}
         <section className="py-16 bg-gray-100">
           <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl font-bold">Stats & Achievements</h2>
+            <h2 className="text-3xl font-bold font-rufina">Stats & Achievements</h2>
             <div className="flex flex-wrap justify-center mt-8">
               <div className="w-full sm:w-1/2 lg:w-1/3 p-4">
                 <div className="bg-white p-6 rounded-lg shadow-lg">
@@ -159,7 +159,7 @@ function App() {
               </div>
             </div>
             <div className="mt-8">
-              <h3 className="text-xl font-bold">Achievements</h3>
+              <h3 className="text-xl font-bold font-rufina">Achievements</h3>
               <ul className="list-disc mt-4 mx-auto text-lg max-w-2xl">
                 <li>All-State Soccer Team 2023</li>
                 <li>Captain of High School Team</li>
@@ -173,7 +173,7 @@ function App() {
         {/* Photos Section */}
         <section className="py-16 bg-white">
           <div className="container mx-auto text-center">
-            <h2 className="text-3xl font-bold">Photo Gallery</h2>
+            <h2 className="text-3xl font-bold font-rufina">Photo Gallery</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-8">
               {/* Placeholder images */}
               <img
@@ -198,8 +198,8 @@ function App() {
         {/* Contact Section */}
         <section id="contact" className="py-16 bg-gray-800 text-white">
           <div className="container mx-auto text-center">
-            <h2 className="text-3xl font-bold">Contact Me</h2>
-            <p className="mt-6 text-lg max-w-3xl mx-auto">
+            <h2 className="text-3xl font-bold font-rufina">Contact Me</h2>
+            <p className="mt-6 text-lg font-oxygen max-w-3xl mx-auto">
               For inquiries, recruitment information, or more details about my athletic journey, feel free to reach out!
             </p>
             <div className="mt-8">
