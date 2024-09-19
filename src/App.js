@@ -206,7 +206,7 @@ function App() {
         <section id="home" className="w-full">
           <div className="mx-auto flex flex-wrap">
             {/* Left side with text */}
-            <div className="w-full md:w-1/2 bg-gray-600 text-white px-48 py-8 flex items-center justify-center text-center">
+            <div className="w-full md:w-1/2 bg-slate-900 text-white px-48 py-8 flex items-center justify-center text-center">
               <div>
                 <h1 className="text-5xl font-rufina">LAKODA GARRISON</h1>
                 <h3 className="text-xl font-oxygen mt-4">
@@ -246,18 +246,28 @@ function App() {
           </div>
         </section>
 
-        {/* About Me Section */}
-        <section className="py-16 bg-white">
-          <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl font-bold font-rufina">About Me</h2>
-            <p className="mt-6 text-lg font-oxygen max-w-3xl mx-auto">
-              I am a passionate and dedicated student-athlete with a strong
-              commitment to both academics and sports. My goal is to compete at
-              the collegiate level while pursuing a degree in [intended major].
-              I have been a member of the [team name] for [number of years] and
-              have consistently been recognized for my leadership and
-              performance on the field.
-            </p>
+        {/* Key Facts Section */}
+        <section id="key-facts" className="bg-black text-white">
+          <div className="py-12">
+            <img
+              src="/Lakoda-circular.jpeg"
+              alt="Lakoda Garrison"
+              className="w-96 h-96 mx-auto rounded-full"
+            />
+          </div>
+          <div className="mx-auto px-4 pt-8 pb-16 text-center">
+            <h2 className="text-5xl text-blue-200 font-rufina">Key Facts</h2>
+            <h2 className="text-2xl mt-8 font-oxygen">About Me</h2>
+            <ul className="mt-6 text-base font-oxygen max-w-3xl mx-auto list-disc list-inside">
+              <li>2026 High School Graduation</li>
+              <li>16 years old</li>
+              <li>6'11" 345 lbs</li>
+              <li>Position: Killer/Smasher</li>
+              <li>Right Handed</li>
+              <li>GPA 3.9</li>
+              <li>SAT 1500</li>
+              <li>NCAA Eligibility number UNKNOWN</li>
+            </ul>
           </div>
         </section>
 
