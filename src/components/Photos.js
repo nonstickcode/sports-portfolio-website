@@ -7,7 +7,9 @@ function Photos() {
         {/* Title Section */}
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold">PHOTO GALLERY</h2>
-          <p className="text-lg text-gray-500 mt-4">Explore some of the best moments</p>
+          <p className="text-lg text-gray-500 mt-4">
+            Explore some of the best moments
+          </p>
         </div>
 
         {/* Photo Grid */}

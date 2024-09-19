@@ -11,7 +11,7 @@ function KeyFacts() {
         />
       </div>
       <div className="mx-auto px-4 pb-8 text-center">
-        <h2 className="text-4xl text-blue-200">Key Facts</h2>
+        <h2 className="text-4xl text-blue-500">Key Facts</h2>
         <h2 className="text-2xl mt-4">About Me</h2>
         <ul className="mt-4 text-base max-w-3xl mx-auto list-disc list-inside">
           <li>2026 High School Graduation</li>
