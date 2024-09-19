@@ -94,6 +94,9 @@ function App() {
             <a href="#community" className="hover:underline">
               Community
             </a>
+            <a href="#character" className="hover:underline">
+              Character
+            </a>
             <a href="#inspiration" className="hover:underline">
               Inspiration
             </a>
@@ -173,6 +176,13 @@ function App() {
               Community
             </a>
             <a
+              href="#character"
+              className="hover:underline"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Character
+            </a>
+            <a
               href="#inspiration"
               className="hover:underline"
               onClick={() => setIsMenuOpen(false)}
@@ -192,43 +202,45 @@ function App() {
 
       {/* Adding margin-top equivalent to the header height */}
       <main className="mt-40">
-        {/* Highlight Video Section */}
+        {/* Home Section */}
         <section id="home" className="w-full">
-          <div className="container mx-auto flex flex-wrap">
+          <div className="mx-auto flex flex-wrap">
             {/* Left side with text */}
-            <div className="w-full md:w-1/2 flex items-center justify-center text-center bg-black text-white p-8">
+            <div className="w-full md:w-1/2 bg-gray-600 text-white px-48 py-8 flex items-center justify-center text-center">
               <div>
-                <h1 className="text-5xl font-bold">THOMAS "TREY" ROGERS</h1>
-                <h3 className="text-xl font-semibold mt-4">
-                  Driven Water Polo Player and Scholar
+                <h1 className="text-5xl font-rufina">LAKODA GARRISON</h1>
+                <h3 className="text-xl font-oxygen mt-4">
+                  Driven Wrestler and Scholar
                 </h3>
-                <p className="mt-4">
-                  My goal is to play collegiate water polo at an exceptional
-                  school where I can also pursue my academic interests.
+                <p className="mt-4 font-oxygen">
+                  My goal is to wrestle at a prestigious collegiate program
+                  while pursuing my academic passions at an exceptional school.
                 </p>
-                <p className="mt-4">
-                  I fell in love with water polo the first time I played - it is
-                  an amazing sport! I am an intense, well-rounded, attacker and
-                  driver who can also defend. I value input from coaches and
-                  teachers and work hard to absorb and translate what I learn
-                  into competition. I am a team player who challenges himself to
-                  reach new levels and strives to lead by example.
+                <p className="mt-4 font-oxygen">
+                  I fell in love with wrestling the first time I stepped onto
+                  the mat—it is an incredible sport! I am a determined,
+                  well-rounded competitor who is both offensive and defensive. I
+                  value input from coaches and teammates, and I work hard to
+                  apply what I learn in every match. I am a team player who
+                  challenges myself to improve, always striving to set a
+                  positive example through leadership.
                 </p>
-                <p className="mt-4">
-                  Despite all of the time I have committed to excelling in water
-                  polo, I have remained at the top of my class academically. I
-                  am particularly strong and really enjoy mathematics. I like to
-                  be challenged and am committed to academic excellence.
+                <p className="mt-4 font-oxygen">
+                  Despite dedicating significant time to excel in wrestling, I
+                  have consistently maintained high academic performance. I
+                  particularly enjoy problem-solving and thrive in challenging
+                  academic environments, where I am committed to pushing myself
+                  toward excellence both on the mat and in the classroom.
                 </p>
               </div>
             </div>
 
             {/* Right side with image */}
-            <div className="w-full md:w-1/2">
+            <div className="w-full md:w-1/2 order-first md:order-last">
               <img
                 className="w-full h-auto"
                 src="/lakoda-placeholder.jpeg" // The image is in the public folder
-                alt="Water polo player"
+                alt="Wrestler"
               />
             </div>
           </div>
