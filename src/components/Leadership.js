@@ -6,7 +6,7 @@ function Leadership() {
       <div className="container mx-auto text-center">
         {/* Title Section */}
         <div className="w-full mx-auto">
-          <h1 className="text-4xl font-bold text-blue-500">
+          <h1 className="text-4xl font-bold text-gray-300">
             LEADERSHIP ACTIVITIES
           </h1>
           <p className="text-lg lg:px-80 mt-4">
@@ -30,7 +30,7 @@ function Leadership() {
                 className="mx-auto mb-4"
               />
             </div>
-            <h3 className="text-xl font-semibold">MATH TUTOR</h3>
+            <h3 className="text-xl font-semibold text-gray-100">MATH TUTOR</h3>
             <p className="mt-2 lg:px-10">
               I am passionate about math and have been told I have a gift for
               explaining concepts to other students.
@@ -47,7 +47,9 @@ function Leadership() {
                 className="mx-auto mb-4"
               />
             </div>
-            <h3 className="text-xl font-semibold">ASSISTANT COACH</h3>
+            <h3 className="text-xl font-semibold text-gray-100">
+              ASSISTANT COACH
+            </h3>
             <p className="mt-2 lg:px-10">
               I enjoy coaching. This past summer I got CPR and First Aid
               certified and helped train a 10u wrestling team.
@@ -64,7 +66,9 @@ function Leadership() {
                 className="mx-auto mb-4"
               />
             </div>
-            <h3 className="text-xl font-semibold">TEAM LEADERSHIP</h3>
+            <h3 className="text-xl font-semibold text-gray-100">
+              TEAM LEADERSHIP
+            </h3>
             <p className="mt-2 lg:px-10">
               Selected captain for Varsity team. Orchestrated team workouts
               during challenging times. Prior captain of the 14u and 16u

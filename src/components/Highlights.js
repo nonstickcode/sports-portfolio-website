@@ -16,9 +16,12 @@ function Highlights() {
           <div className="w-full">
             <iframe
               className="w-full h-64"
-              src="https://www.youtube.com/embed/placeholder"
-              title="Highlight Video 1"
-              allowFullScreen
+              src="https://www.youtube.com/embed/tiBC61D6DcM?si=uzWpgR_xXHhL41Nm"
+              title="Highlight Video 1 rob dog fresh"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
             ></iframe>
           </div>
 

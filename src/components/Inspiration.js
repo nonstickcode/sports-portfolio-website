@@ -4,7 +4,7 @@ function Inspiration() {
   return (
     <section
       id="inspiration"
-      className="w-full bg-center bg-cover text-blue-500"
+      className="w-full bg-center bg-cover"
       style={{
         backgroundImage: "url('/inspiration-placeholder.jpg')",
         backgroundPosition: 'center',
