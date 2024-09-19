@@ -4,6 +4,10 @@ import Home from './components/Home';
 import KeyFacts from './components/KeyFacts';
 import Contact from './components/Contact';
 import Athletics from './components/Athletics';
+import Highlights from './components/Highlights';
+import OtherVideos from './components/OtherVideos';
+import Photos from './components/Photos';
+import Academics from './components/Academics';
 
 function App() {
   useEffect(() => {
@@ -34,6 +38,10 @@ function App() {
         <Home />
         <KeyFacts />
         <Athletics />
+        <Highlights />
+        <OtherVideos />
+        <Photos />
+        <Academics />
 
         {/* Stats and Achievements Section */}
         <section className="py-16 bg-gray-100">

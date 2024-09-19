@@ -6,14 +6,14 @@ function Athletics() {
       <div className="container mx-auto text-center">
         {/* Title Section */}
         <div className="w-full mx-auto">
-          <h1 className="text-5xl font-bold text-gray-800">
+          <h1 className="text-4xl font-bold text-gray-800">
             ATHLETIC EXPERIENCE
           </h1>
           <p className="text-lg text-gray-500 mt-4">Teams and Highlights</p>
         </div>
 
         {/* Outer Wrapper for Centering the Entire Content */}
-        <div className="mt-8 max-w-6xl w-fit mx-auto">
+        <div className="mt-8 max-w-6xl w-fit mx-8 lg:mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-start">
             {/* Left Column: Teams */}
             <div className="w-full md:w-1/3 mr-4 text-left">
