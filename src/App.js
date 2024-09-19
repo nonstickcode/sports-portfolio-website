@@ -67,17 +67,39 @@ function App() {
 
           {/* Full Navigation Links for Desktop */}
           <nav className="hidden md:flex justify-center font-oxygen mt-6 space-x-6 text-lg font-thin">
-            <a href="#home" className="hover:underline">Home</a>
-            <a href="#key-facts" className="hover:underline">Key Facts</a>
-            <a href="#athletics" className="hover:underline">Athletics</a>
-            <a href="#highlights" className="hover:underline">Highlights</a>
-            <a href="#other-videos" className="hover:underline">Other Videos</a>
-            <a href="#photos" className="hover:underline">Photos</a>
-            <a href="#academics" className="hover:underline">Academics</a>
-            <a href="#leadership" className="hover:underline">Leadership</a>
-            <a href="#community" className="hover:underline">Community</a>
-            <a href="#inspiration" className="hover:underline">Inspiration</a>
-            <a href="#contact" className="hover:underline">Contact</a>
+            <a href="#home" className="hover:underline">
+              Home
+            </a>
+            <a href="#key-facts" className="hover:underline">
+              Key Facts
+            </a>
+            <a href="#athletics" className="hover:underline">
+              Athletics
+            </a>
+            <a href="#highlights" className="hover:underline">
+              Highlights
+            </a>
+            <a href="#other-videos" className="hover:underline">
+              Other Videos
+            </a>
+            <a href="#photos" className="hover:underline">
+              Photos
+            </a>
+            <a href="#academics" className="hover:underline">
+              Academics
+            </a>
+            <a href="#leadership" className="hover:underline">
+              Leadership
+            </a>
+            <a href="#community" className="hover:underline">
+              Community
+            </a>
+            <a href="#inspiration" className="hover:underline">
+              Inspiration
+            </a>
+            <a href="#contact" className="hover:underline">
+              Contact
+            </a>
           </nav>
         </div>
 
@@ -87,17 +109,83 @@ function App() {
             ref={menuRef}
             className="md:hidden flex flex-col items-center bg-black text-white font-oxygen py-4 space-y-4"
           >
-            <a href="#home" className="hover:underline" onClick={() => setIsMenuOpen(false)}>Home</a>
-            <a href="#key-facts" className="hover:underline" onClick={() => setIsMenuOpen(false)}>Key Facts</a>
-            <a href="#athletics" className="hover:underline" onClick={() => setIsMenuOpen(false)}>Athletics</a>
-            <a href="#highlights" className="hover:underline" onClick={() => setIsMenuOpen(false)}>Highlights</a>
-            <a href="#other-videos" className="hover:underline" onClick={() => setIsMenuOpen(false)}>Other Videos</a>
-            <a href="#photos" className="hover:underline" onClick={() => setIsMenuOpen(false)}>Photos</a>
-            <a href="#academics" className="hover:underline" onClick={() => setIsMenuOpen(false)}>Academics</a>
-            <a href="#leadership" className="hover:underline" onClick={() => setIsMenuOpen(false)}>Leadership</a>
-            <a href="#community" className="hover:underline" onClick={() => setIsMenuOpen(false)}>Community</a>
-            <a href="#inspiration" className="hover:underline" onClick={() => setIsMenuOpen(false)}>Inspiration</a>
-            <a href="#contact" className="hover:underline" onClick={() => setIsMenuOpen(false)}>Contact</a>
+            <a
+              href="#home"
+              className="hover:underline"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Home
+            </a>
+            <a
+              href="#key-facts"
+              className="hover:underline"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Key Facts
+            </a>
+            <a
+              href="#athletics"
+              className="hover:underline"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Athletics
+            </a>
+            <a
+              href="#highlights"
+              className="hover:underline"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Highlights
+            </a>
+            <a
+              href="#other-videos"
+              className="hover:underline"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Other Videos
+            </a>
+            <a
+              href="#photos"
+              className="hover:underline"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Photos
+            </a>
+            <a
+              href="#academics"
+              className="hover:underline"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Academics
+            </a>
+            <a
+              href="#leadership"
+              className="hover:underline"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Leadership
+            </a>
+            <a
+              href="#community"
+              className="hover:underline"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Community
+            </a>
+            <a
+              href="#inspiration"
+              className="hover:underline"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Inspiration
+            </a>
+            <a
+              href="#contact"
+              className="hover:underline"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Contact
+            </a>
           </nav>
         )}
       </header>
@@ -105,18 +193,43 @@ function App() {
       {/* Adding margin-top equivalent to the header height */}
       <main className="mt-40">
         {/* Highlight Video Section */}
-        <section className="py-16 bg-gray-100">
-          <div className="container mx-auto text-center">
-            <h2 className="text-3xl font-bold font-rufina">Highlight Video</h2>
-            <div className="mt-8">
-              <iframe
-                className="mx-auto"
-                width="80%"
-                height="450"
-                src="https://www.youtube.com/embed/placeholder"
-                title="Highlight Video"
-                allowFullScreen
-              ></iframe>
+        <section id="home" className="w-full">
+          <div className="container mx-auto flex flex-wrap">
+            {/* Left side with text */}
+            <div className="w-full md:w-1/2 flex items-center justify-center text-center bg-black text-white p-8">
+              <div>
+                <h1 className="text-5xl font-bold">THOMAS "TREY" ROGERS</h1>
+                <h3 className="text-xl font-semibold mt-4">
+                  Driven Water Polo Player and Scholar
+                </h3>
+                <p className="mt-4">
+                  My goal is to play collegiate water polo at an exceptional
+                  school where I can also pursue my academic interests.
+                </p>
+                <p className="mt-4">
+                  I fell in love with water polo the first time I played - it is
+                  an amazing sport! I am an intense, well-rounded, attacker and
+                  driver who can also defend. I value input from coaches and
+                  teachers and work hard to absorb and translate what I learn
+                  into competition. I am a team player who challenges himself to
+                  reach new levels and strives to lead by example.
+                </p>
+                <p className="mt-4">
+                  Despite all of the time I have committed to excelling in water
+                  polo, I have remained at the top of my class academically. I
+                  am particularly strong and really enjoy mathematics. I like to
+                  be challenged and am committed to academic excellence.
+                </p>
+              </div>
+            </div>
+
+            {/* Right side with image */}
+            <div className="w-full md:w-1/2">
+              <img
+                className="w-full h-auto"
+                src="/lakoda-placeholder.jpeg" // The image is in the public folder
+                alt="Water polo player"
+              />
             </div>
           </div>
         </section>
@@ -126,10 +239,12 @@ function App() {
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl font-bold font-rufina">About Me</h2>
             <p className="mt-6 text-lg font-oxygen max-w-3xl mx-auto">
-              I am a passionate and dedicated student-athlete with a strong commitment to both academics and sports.
-              My goal is to compete at the collegiate level while pursuing a degree in [intended major]. I have been
-              a member of the [team name] for [number of years] and have consistently been recognized for my leadership
-              and performance on the field.
+              I am a passionate and dedicated student-athlete with a strong
+              commitment to both academics and sports. My goal is to compete at
+              the collegiate level while pursuing a degree in [intended major].
+              I have been a member of the [team name] for [number of years] and
+              have consistently been recognized for my leadership and
+              performance on the field.
             </p>
           </div>
         </section>
@@ -137,7 +252,9 @@ function App() {
         {/* Stats and Achievements Section */}
         <section className="py-16 bg-gray-100">
           <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl font-bold font-rufina">Stats & Achievements</h2>
+            <h2 className="text-3xl font-bold font-rufina">
+              Stats & Achievements
+            </h2>
             <div className="flex flex-wrap justify-center mt-8">
               <div className="w-full sm:w-1/2 lg:w-1/3 p-4">
                 <div className="bg-white p-6 rounded-lg shadow-lg">
@@ -200,7 +317,8 @@ function App() {
           <div className="container mx-auto text-center">
             <h2 className="text-3xl font-bold font-rufina">Contact Me</h2>
             <p className="mt-6 text-lg font-oxygen max-w-3xl mx-auto">
-              For inquiries, recruitment information, or more details about my athletic journey, feel free to reach out!
+              For inquiries, recruitment information, or more details about my
+              athletic journey, feel free to reach out!
             </p>
             <div className="mt-8">
               <a
