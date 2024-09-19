@@ -1,13 +1,32 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useEffect } from 'react';
 import Header from './components/Header';
 
 function App() {
+  useEffect(() => {
+    const header = document.getElementById('site-header');
+    const sections = document.querySelectorAll('section');
+
+    const adjustScrollMargin = () => {
+      const headerHeight = header.offsetHeight; // Get the current height of the header
+      sections.forEach((section) => {
+        section.style.scrollMarginTop = `${headerHeight}px`;
+      });
+    };
+
+    adjustScrollMargin();
+
+    // Adjust margin when the window is resized (in case header height changes)
+    window.addEventListener('resize', adjustScrollMargin);
+
+    return () => {
+      window.removeEventListener('resize', adjustScrollMargin);
+    };
+  }, []);
+
   return (
     <div className="min-h-screen">
       <Header />
-
-      {/* Adding margin-top equivalent to the header height */}
-      <main className="mt-40">
+      <main>
         {/* Home Section */}
         <section id="home" className="w-full">
           <div className="mx-auto flex flex-wrap">

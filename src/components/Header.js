@@ -8,7 +8,6 @@ function Header() {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  // Close the menu when clicking outside of it
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (menuRef.current && !menuRef.current.contains(event.target)) {
@@ -28,9 +27,8 @@ function Header() {
   }, [isMenuOpen]);
 
   return (
-    <header className="py-8 fixed top-0 left-0 w-full z-50">
+    <header id="site-header" className="py-8 sticky top-0 w-full z-50 bg-black">
       <div className="container mx-auto relative">
-        {/* Header Title */}
         <div className="text-center w-full">
           <h1 className="text-2xl lg:text-4xl leading-tight lg:leading-loose">
             <span className="block lg:inline lg:mr-2">LAKODA</span>
@@ -45,14 +43,12 @@ function Header() {
             className="focus:outline-none"
             aria-label="Toggle navigation"
           >
-            {/* Conditionally hide the hamburger icon when the menu is open */}
             {!isMenuOpen && (
               <svg
                 className="w-10 h-10 text-slate-300"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
               >
                 <path
                   strokeLinecap="round"

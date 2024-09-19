@@ -27,18 +27,6 @@ h3 {
   font-size: 2rem;
 }
 
-/* Additional classes */
-.App-header {
-  background-color: #000; /* Set header to black */
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
 .App-link {
   color: #61dafb;
 }
@@ -51,4 +39,12 @@ h3 {
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 200px; /* Adjust according to your header height */
 }
