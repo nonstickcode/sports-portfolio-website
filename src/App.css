@@ -1,20 +1,35 @@
-.App {
-  text-align: center;
+/* Global Styles */
+body,
+header {
+  background-color: #000; /* Black background */
+  color: #fff; /* White text */
+  font-family: 'Oxygen', sans-serif; /* Default font as Oxygen */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Applying specific fonts for H2, H3 */
+h1,
+h2,
+h3 {
+  font-family: 'Rufina', serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* If you want to style H1 specifically */
+h1 {
+  font-size: 5rem;
 }
 
+h2 {
+  font-size: 3rem;
+  color: #61dafb; /* Example to have a different color for H2 */
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+/* Additional classes */
 .App-header {
-  background-color: #282c34;
+  background-color: #000; /* Set header to black */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -28,11 +43,12 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Other default App styles */
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
 }
