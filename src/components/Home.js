@@ -36,7 +36,7 @@ function Home() {
         <div className="w-full md:w-1/2 order-first md:order-last">
           <img
             className="w-full h-auto"
-            src="/lakoda-placeholder.jpeg"
+            src="/lakoda-home-photo.jpeg"
             alt="Wrestler"
           />
         </div>

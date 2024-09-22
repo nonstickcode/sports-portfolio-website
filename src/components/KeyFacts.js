@@ -5,7 +5,7 @@ function KeyFacts() {
     <section id="key-facts">
       <div className="py-8">
         <img
-          src="/Lakoda-circular.jpeg"
+          src="/lakoda-about-me-photo.jpeg"
           alt="Lakoda Garrison"
           className="w-96 h-96 mx-auto rounded-full"
         />
